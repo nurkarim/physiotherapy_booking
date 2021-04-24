@@ -1,0 +1,142 @@
+
+.applist_container{
+  table.table-bordered tbody th, table.table-bordered tbody td {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+  }
+  
+  .success-cancel{
+    color: #ffffff;
+  }
+  .messagebox{
+    width: 350px;
+  }
+
+  tr:nth-child(even) {background: #f2f2f2
+  }
+  tr:nth-child(odd) {background: #FFF}
+
+  $baseFontSize: 16;
+
+  $green: #009688;
+input[type='checkbox']{ height: 0; width: 0; display: none;}
+
+input[type='checkbox'] + label{
+  position: relative;
+  display: flex;
+  margin: .6em 0;
+  align-items: center;
+  transition: color 250ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox'] + label > ins{
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 2em;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  transition: height 300ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox'] + label > ins > i{
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+}
+input[type='checkbox'] + label > span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border: 2px solid #9E9E9E;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label{
+}
+input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + label > span{
+  background: rgba(255,255,255,.1);
+}
+input[type='checkbox']:checked + label > ins{ height: 100%; }
+
+input[type='checkbox']:checked + label > span{
+  border: .5em solid $primary-color;
+  animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+}
+input[type='checkbox']:checked + label > span:before{
+  content: "";
+  position: absolute;
+  top: .6em;
+  left: .2em;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
+}
+
+@keyframes shrink-bounce{
+  0%{
+    transform: scale(1);
+  }
+  33%{
+    transform: scale(.85);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes checkbox-check{
+  0%{
+    width: 0;
+    height: 0;
+    border-color: #212121;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  33%{
+    width: .2em;
+    height: 0;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  100%{
+    width: .2em;
+    height: .5em;
+    border-color: #212121;
+    transform: translate3d(0,-.5em,0) rotate(45deg);
+  }
+}
+
+
+  .actions {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    margin-left: 15px;
+    select.input-sm {
+      height: 30px;
+      line-height: 30px;
+      width: 150px;
+    }
+
+    .form-control{
+      display: initial;
+      margin-right: 15px;
+    }
+    input.form-control.submit{
+      width: 150px;
+      display: initial;
+      border-radius: 5px;
+    }
+
+    .apply.button{
+      padding-left: 15px;
+    }
+  }
+}

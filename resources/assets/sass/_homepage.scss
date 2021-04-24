@@ -1,0 +1,316 @@
+.homepage {
+  ::selection {
+    background: $primary-color;
+    /* WebKit/Blink Browsers */
+  }
+
+  span.mkd-icon-font-elegant {
+    padding-left: 22px;
+  }
+
+  .site-header.fixed {
+    background-color: $black;
+  }
+
+  .site-title-block {
+    padding-top: 250px;
+    padding-bottom: 60px;
+    margin-left: -150px;
+  }
+
+  .site-inner,
+  .site-title-block {
+    text-align: left;
+  }
+
+  .intro {
+    position: relative;
+    color: #fffdff;
+    padding: 0 20% 100px;
+    text-align: left;
+  }
+
+  a.home_link {
+    color: white;
+    transition: all 0.3s;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .innersection {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 20;
+  }
+
+  .secondsection_home {
+    background-image: url("/booking_v2/public/image/section-bg.png");
+    width: 100%;
+    height: 985px;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -200px;
+
+    &_container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      padding-top: 230px;
+
+      .block {
+        width: calc(33.33% - 30px);
+        //width: 404px;
+        height: 777px;
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,.08);
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .img_container {
+          position: relative;
+        }
+
+        .mkd-card-icon {
+          font-size: 20px;
+          display: block;
+          width: 66px;
+          height: 66px;
+          line-height: 66px;
+          position: absolute;
+          color: #2d2d2d;
+          background-color: $primary-color;
+          border-radius: 50%;
+          bottom: -33px;
+          left: calc(50% - 33px);
+        }
+      }
+    }
+  }
+  .text_homeblock.homeblockv1 {
+    text-align: center;
+    margin-top: 55px;
+    padding: 0 25px;
+  }
+
+  .sectionreserveren {
+    background-image: url("/booking_v2/public/images/home/kettlebell.jpg");
+    max-width: 100%;
+    height: 319px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+
+    h1 {
+      padding-top: 115px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .sectionpricing {
+    background-image: url("/booking_v2/public/images/home/h3-parallax-2.jpg");
+    max-width: 100%;
+    min-height: 1719px;
+    //background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% -295px;
+    padding-top: 140px;
+
+    h1 {
+      text-align: center;
+    }
+
+    .pricingblokken {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      .pricing {
+        position: relative;
+        flex-basis: 33.33%;
+        position: relative;
+        padding: 0 13px;
+        margin-top: 50px;
+
+        .inner {
+          min-height: 40px;
+          background-color: #2c2d2d;
+
+          ul{
+          list-style: none;
+          padding: 0;
+            margin: 0;
+          }
+          li{
+            padding: 12px;
+            border-bottom: 1px solid #494949;
+            text-align: center;
+            color: #fff;
+            &:first-child{
+              font-size: 60px;
+              font-weight: 700;
+              padding: 30px 12px;
+              line-height: 60px;
+              span{
+                font-size: 18px;
+                font-weight: 300;
+              }
+            }
+        }
+        }
+      }
+    }
+  }
+
+  .sectionpatterns {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background-color: #262424;
+    min-height: 550px;
+    text-align: center;
+
+    h1 {
+      color: white;
+    }
+
+    .patterns_blokken {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    .pattern_blok {
+      padding: 0 15px;
+      flex-basis: 25%;
+
+      .patternTitle {
+        color: white;
+      }
+
+      .patternContent {
+        color: #808080;
+      }
+    }
+  }
+
+  .sectionshop {
+    background-color: white;
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 115px;
+
+    .blokkenshop {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      .product_item {
+        flex-basis: 25%;
+      }
+    }
+  }
+
+  .sectiontestimonials {
+    background-image: url("/booking_v2/public/images/home/h3-parallax-3.jpg");
+    max-width: 100%;
+    min-height: 700px;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 140px;
+    text-align: center;
+
+    h1 {
+      color: white;
+    }
+
+    .blokken_testimonials {
+      position: absolute;
+      top: 189px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .blok_testimonial {
+        flex-basis: calc(33.33% - 30px);
+        margin-right: 30px;
+        min-height: 525px;
+        background-color: white;
+        padding: 15px 30px;
+        padding-top: 35px;
+        position: relative;
+        h1{ color: $primary-color}
+
+        &:last-child {
+          margin-right: 0;
+        }
+        .bar{
+          width: 100%;
+          background-color: #f9f4fd;
+          color: #000;
+          position: absolute;
+          bottom: 50px;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .sectioncontact {
+    background-image: url("/booking_v2/public/images/home/h3-parallax-4.jpg");
+    max-width: 100%;
+    min-height: 700px;
+    margin-top: -20px;
+    background-size: cover;
+    padding-top: 300px;
+    text-align: center;
+  }
+
+  .sectionsocialmedia {
+    background-image: url("/booking_v2/public/images/home/parralax1.jpg");
+    max-width: 100%;
+    background-attachment: fixed;
+    min-height: 380px;
+    margin-top: -20px;
+    background-size: cover;
+    padding-top: 140px;
+    h3{
+      text-align: center;
+      color: #2d2d2d;
+      font-family: Montserrat,sans-serif;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-size: 19px;
+      &:first-child{
+        font-size: 17px;
+      }
+    }
+
+  }
+
+}
+.py-5{
+  margin-top: -7px;
+}
+a.meer {
+  left: 50%;
+  position: absolute;
+  color: white;
+  transform: translate(-50%,0);
+  transition: all 0.3;
+  &:hover{
+    color: black;
+  }
+}

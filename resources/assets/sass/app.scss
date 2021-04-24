@@ -1,0 +1,41 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+// Load all the components
+@import 'components/buttons';
+@import 'components/fields';
+@import 'components/nav';
+@import 'components/messaging';
+@import 'components/fonticons';
+@import 'components/bootstrap';
+
+
+//load everything from appointments
+@import 'appointments/create';
+@import 'appointments/list';
+
+// load settings
+@import 'settings/roles';
+
+// load availability
+@import 'availability/main';
+
+
+// load my account
+@import 'my-account/main';
+
+//Load the main css file. For basic structure
+@import 'main';
+@import 'front_page/types';
+@import 'homepage';
+
+//Load mediaqueries
+@import 'mediaquerries/nav';

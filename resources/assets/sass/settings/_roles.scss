@@ -1,0 +1,9 @@
+.checkbox-info input[type="checkbox"]:checked + label::before {
+    background-color: $primary-color-dark;
+    border-color: $primary-color-dark;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}

@@ -1,0 +1,99 @@
+
+body {
+    padding-top: 0px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 0px;
+    }
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.ml-auto{
+
+  font-family:Liberation Serif;
+  font-size: 18px ;
+
+}
+#nav-color a{color: white;}
+
+#search-input {
+    width: 230px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../image/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 15px 10px 40px;
+  
+}
+
+#search-input:focus {
+    width: 100%;
+}
+
+.head-title{
+    padding-top: 10px;
+    text-align: center;
+    font-family:Liberation Serif;
+    font-size: 30px ;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.head-text{
+    text-align: center;
+    font-family:Liberation Serif;
+    font-size: 20px ;
+    color: #52d862;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+#bg-image{
+     background-color: white;
+    background-image: url('../image/bg.png');
+    background-repeat:repeat;
+}
+.mrg-div{
+  height: 18px;
+}
+.specialist-option{
+    height: 35px;
+}
+#specialist-row{
+     background-color: white;
+    background-image: url('../image/doctor-avatar.png');
+    background-position: right; 
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+.contact-button{
+    background-color: #52d862;
+    color: white;
+}
+#select-time{height: 30px;background-color: #ccc}
+.footer-left-style-title p{ color: white }
+.footer-left-style-title p a{ color: white; }
+#footer-middel-title p a{ color: white; }
+#footer-middel-title li{ color: white,;list-style: none }
+#footer-middel-title li a{ color: white; }
+#footer-right-title p a{ color: white; }
+
+#footer-right-title li{ color: white,;list-style: none }
+#footer-right-title li a{ color: white; }

@@ -1,0 +1,78 @@
+.appointments_css {
+  .bootstrap-datetimepicker-widget table td.active,
+  .bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: $primary-color;
+  }
+
+  .put_right_01 {
+    padding-left: 8px;
+  }
+
+  .radio-primary input[type="radio"]:checked + label::before {
+    border-color: $primary-color;
+  }
+
+  .checkbox-primary input[type="checkbox"]:checked + label::before {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  .radio-primary input[type="radio"]:checked + label::after {
+    background-color: $primary-color;
+  }
+
+  .remove_padding .checkbox-inline,
+  .remove_padding .radio-inline {
+    padding-left: 0;
+  }
+
+  li.select_available_hour {
+    list-style: none;
+    font-size: 15px;
+    height: 50px;
+    color: white;
+    font-weight: 600;
+    background-color: $black;
+    padding: 0 21px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  ul.hoursbox {
+    height: 280px;
+    overflow: auto;
+    border: 1px solid grey;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+    background: $black;
+    color: $primary-color;
+  }
+
+  .next span {
+    color: white;
+    transition: all 0.3s;
+  }
+
+  .next span:hover {
+    color: $primary-color;
+  }
+
+  .glyphicon.glyphicon-chevron-left {
+    color: white;
+    transition: all 0.3s;
+  }
+
+  .glyphicon.glyphicon-chevron-left:hover {
+    color: $primary-color;
+  }
+
+  .fixedwith-field {
+    width: 390px;
+  }
+  .fixedwith-field2 {
+    width: 140px;
+  }
+}

@@ -1,0 +1,44 @@
+@import url(//fonts.googleapis.com/icon?family=Material+Icons);
+.material-icons{
+  position: absolute;
+  top: 20px;
+  line-height: 5px;
+  left: 10px;
+}
+.messagebox {
+  width: 300px;
+  min-height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 20px 0;
+  border-radius: 5px;
+  padding-left: 45px;
+    color: black;
+line-height: 50px;
+  font-size: 10;
+  position: relative;
+
+}
+.error{
+background-color: #D74A4A;
+  border: 1px solid #D74A4A;
+  color: white;
+
+}
+.success{
+  background-color: #5BC3A2;
+  border: 1px solid #5BC3A2;
+  color: red;
+
+}
+.info{
+  background-color: #6FB1C7;
+  border: 1px solid #6FB1C7;
+  color: white;
+
+}
+
+input.inputField{
+  background-color: #f1f1f1;
+  border: 1px solid #b8b8b8;
+}

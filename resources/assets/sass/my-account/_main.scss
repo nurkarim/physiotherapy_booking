@@ -1,0 +1,12 @@
+.container_paymentStatus{
+  padding-top: 50px;
+  min-height: calc(100vh - 400px);
+
+  h3 {
+    color: black;
+    span{
+      color: $primary-color;
+    }
+  }
+}
+
